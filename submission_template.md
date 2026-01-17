@@ -2,7 +2,7 @@
 
 ## Candidate
 - Name: Felmeta Muktar
-- Approximate time spent: 40 minutes
+- Approximate time spent: 60 minutes
 
 ---
 
@@ -29,7 +29,7 @@
 ### Summary of changes
 - Track the count of non-cancelled orders separately instead of using total order count
 - Add explicit checks for empty list and zero valid orders, raising clear `ValueError` messages
-- Increment `valid_count` only when processing non-cancelled orders to ensure divisor matches the numerator
+- Increment `valid_count` only when processing non-cancelled orders to ensure divisor matches the numerator correctly
 
 The fix maintains the same function signature and core logic while correcting the mathematical error and improving edge case handling.
 
